@@ -177,13 +177,13 @@ p {
 
 .hero {
   background-color: var(--hero-footer-color);
+  padding: 200px 0;
 }
 .hero-title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   color: var(--white-color);
   font-weight: 900;
@@ -197,8 +197,9 @@ p {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  margin-left: 485px;
-  margin-bottom: 200px;
+  border: none;
+  display: block;
+  margin: 0 auto;
 
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -237,6 +238,10 @@ p {
   line-height: 1.71;
 }
 
+.peculiarities-list .item {
+  flex-basis: 270px;
+}
+
 .peculiarities-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -273,6 +278,14 @@ p {
   display: flex;
 }
 
+.team-list .item {
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .our-team .title {
   margin-bottom: 50px;
 
@@ -282,18 +295,12 @@ p {
 }
 
 .team-card {
-  width: 270px;
-  height: 368px;
-  border-radius: 0px 0px 4px 4px;
-
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .employees {
-  margin-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -302,10 +309,10 @@ p {
 }
 
 .team-list .text {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
+  margin-bottom: 0;
 }
 
 /* подвал (footer) */
@@ -403,7 +410,8 @@ p {
 }
 
 .work-list .text {
-  font-weight: 400;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.87;
 }
@@ -425,5 +433,6 @@ p {
 
 .card-content {
   border: 1px solid #eeeeee;
+  border-top: none;
   padding: 20px 24px;
 }
